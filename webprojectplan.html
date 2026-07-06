@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title>Arte in Romagna</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Maria Maddalena Maffi">
+	<meta name="description" content="sito dedicato all'arte romagnola, un catalogo comprendente le opere sparse nel territorio">
+	<meta name="keywords" content="arte, Romagna, città, Rimini, Cattolica, Bardeggia, Giotto">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Noto Sans" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="stilecss/stile.css">
+</head>
+
+<body>
+	<header id="top">
+		<div class="header">
+			<a href="index.html"> <img src="images/logoarteinromagna.png"></a>
+		</div>
+	</header>
+	<nav>
+		<div class="topnav">
+			<a href="index.html">Home</a>
+			<a href="catalogo.html">Catalogo</a>
+			<div class="dropdown">
+				<button class="dropbtn">Servizi
+							<i class="fa fa-caret-down"></i>
+    					</button>
+    				<div class="dropdown-content">
+     				 	<a href="#">Itinerari</a>
+      					<a href="https://www.itinerarinellarte.it/" target="_blank">Mostre ed eventi</a>
+      				</div>
+      			</div>
+				<a href="dati.html">Dati</a>
+				<input type="text" placeholder="Ricerca...">
+			</div>
+	</nav>
+
+	<section>
+		<div class="tab">
+			<button class="tablinks" onclick="openCity(event,'idea')">Idea</button>
+			<button class="tablinks" onclick="openCity(event,'brief')">1. Brief</button>
+			<button class="tablinks" onclick="openCity(event,'benchmark')">2. Benchmark</button>
+			<button class="tablinks" onclick="openCity(event,'struttura')">3. Struttura</button>
+			<button class="tablinks" onclick="openCity(event, 'layout')">4. Layout</button>
+			<button class="tablinks" onclick="openCity(event, 'usabilità')">5. Usabilità</button>
+			<button class="tablinks" onclick="openCity(event,'servizi')">6. Servizi</button>
+			<button class="tablinks" onclick="openCity(event, 'bibliografia')">7. Bibliografia e sitografia</button>
+		</div>
+
+
+		<div id="idea" class="tabcontent">
+			<h3>Il progetto</h3>
+			<p>Questa risorsa digitale è un catalogo delle opere d'arte conservate in Romagna.</p>
+			<p>Molti sono gli artisti passati nel territorio della Romagna nel corso dei secoli; alcuni però sono passati inosservati e, spesso, sono stati dimenticati. Questo sito si propone di raccogliere le opere che si trovano nell'area romagnola, con l'intento implicito di riscoprire l'arte che ci circonda, a volte nascosta o dimenticata.</p>
+			<p>Per creare la risorsa Web è stato utilizzato HTML 5, con link a CSS e Javascript, oltre a collegamenti esterni a Youtube, Wikipedia ed altri siti</p>
+			<p>Il design è responsive e nel CSS è stato inserito anche il Media Query, con la funzione di rendere le pagine adatte ai vari dispositivi, così da poter aprire la pagina Web anche su smartphone e tablet.</p>
+			<p>Per quanto riguarda l'accesibilità: le immagini presentano attributo ALT (alternative text che descrive l'immagine, con la funzione di spiegare cosa si vede sia quando questa non si carica sia perché possa essere "letta" dallo screen reader per persone non vedenti) e TITLE (testo informativo aggiuntivo che appare al passaggio del mouse).</p>
+		</div>
+
+		<div id="brief" class="tabcontent">
+			<h3>Finalità</h3>
+			<p>Il sito è pensato per creare una maggiore consapevolezza dell'arte in territorio romagnolo. Ci sono autori e opere degne di nota ma che spesso rimangono sconosciute, anche per chi può sempre ammirarle; facendo parte anch'esse della nostra cultura artistica, ho ritenuto giusto dare anche a tali opere il rilievo che si spettano e permettere a tutti di poterle conoscere. Questo catalogo ha dunque l'obiettivo di raccogliere le opere sparse nel territorio, sia le più conosciute, sia quelle ignote</p>
+			<h3>Pubblico</h3>
+			<p>Questa risorsa digitale è pensata per vari tipi di utenti: un turista, uno studente che voglia approfondire una determinata opera conservata in Romagna, un semplice appassionato d'arte, una persona curiosa di scoprire il proprio territorio. L'accesso è libero: il sito è pensato come un luogo di ricerca, consultazione e approfondimento, senza necessità di iscrizione o registrazione per attivare ulteriori e/o differenti servizi </p>
+			<h3>Accesso</h3>
+			<p>La comunicazione avviene principalmente attraverso testi e immagini. Dove possibile, perchè esistenti, sono pensate anche risorse video per approfondimento. Inoltre, come già detto, sono stati inseriti gli attributi ALT e TITLE per migliorare l'accessibilità al sito</p>
+			<h3>Contenuti e dati</h3>
+			<p>I contenuti sono in parte conservati in rete, in parte su volumi cartacei (vedi <i>7.Bibliografia e sitografia</i>). I nuovi contenuti sono un'elaborazione di informazioni tratte da questi supporti</p>
+		</div>
+
+		<div id="benchmark" class="tabcontent">
+			<h3>Analisi di mercato</h3>
+			<p>Sul tema scelto per la risorsa Web esistono già diversi portali che trattano contenuti affini, ma nessuno copre in maniera completa o specifica l'argomento scelto per il progetto. In particolare, due esempi di risorse presenti sul Web confrontate per la creazione del sito sono il <i><a href="https://catalogo.beniculturali.it" target="_blank">Catalogo generale dei Beni Culturali</a></i> e <i><a href="https://visitromagna.it" target="_blank">VisitRomagna</a></i>.</p>
+
+			<p>Il primo intende coprire l'intero patrimonio nazionale in modo enciclopedico e con taglio tecnico, per una consultazione quasi scientifica delle opere. Ma, attraverso la ricerca, si è visto che alcuni autori e opere minori non sono presenti, risultando quindi incompleta (da qui, in parte, l'esigenza di creare un sito che comprendesse anche questi); il secondo sito Web copre il territorio romagnolo ma con un'attenzione prettamente turistico-promozionale (eventi, itinerari, esperienze), ma non approfondisce i contenuti specifici dell'arte con il livello di dettaglio necessario.Dal punto di vista dei contenuti, quindi, non sempre si può fare riferimento a queste risorse.</p>
+
+			<p>Ho ritenuto dunque necessaria la creazione di un nuovo sito perché nessuno dei portali esistenti guarda all'arte in territorio romagnolo in maniera approfondita e specifica. L'intento quindi è colmare questa mancanza, riprendendo però pattern e servizi già collaudati, come per esempio la sezione itinerari, una mappa, etc... </p>
+
+			<p>Il <i>Catalogo generale dei Beni Culturali</i> è strutturato nel seguente modo: una sticky navbar nell'header, una sezione con due division (div) con le cards per raccogliere gli autori e i luoghi della cultura, un'altra sezione con il catalogo, una barra di ricerca, i settori in cui navigare e una mappa per località; c'è poi una sezione per gli itinerari (sempre con classe cards), e un footer con informazioni istituzionali, contatti, link utili e riferimenti normativi. Per quanto riguarda il design, l'interfaccia adotta uno stile sobrio con una palette nei toni del blu, poche decorazioni e un layout chiaro e leggibile.</p>
+			<p><i>VisitRomagna</i> è costruito invece nella seguente modalità: l'header presenta una hero image con logo, i social media della pagina, icona per la ricerca e la lingua, sotto la quale è presente la barra di navigazione primaria (navbar) con dropdown buttons; la homepage è divisa in sezioni, (eventi, news, itinerari) presentate attraverso l'utilizzo di cards per organizzare i contenuti, intervallate da una responsive image grid e informazione su trasporti e località e vengono poi inseriti approfondimenti tramite link video; infine, è presente il footer con link ai social media (facebook, instagram e youtube), download,contatti, galleria foto, informazioni sulla privacy, link utili, note legali, etc... Il design è chiaro, con colori che richiamano il mare, caratteristico del territorio, con una scrittura leggibile sin dal primo impatto visivo </p>
+		</div>
+
+		<div id="struttura" class="tabcontent">
+			<h3>La mappa concettuale</h3>
+			<p><img src="images/wpp/mappaconcettuale.jpeg"></p>
+
+			<h3>Lo schema</h3>
+			<p><img src="images/wpp/schemadipendenze.jpeg"></p>
+
+			<h3>Le categorie</h3>
+			<p><img src="images/wpp/categorie.jpeg"></p>
+			<p>Le categorie utilizzate per la descrizione dei dati di questa collezione sono le seguenti: nome (dc.title), autore (dc.creator), data (dc.date), luogo (dc.coverage), tecnica (dc.format), dimensioni (dimension), parole chiave (keywords) e descrizione (dc.description).
+			I dati sono contenuti in <a href="dati.html"> DATI</a>, presente nella barra di navigazione primaria</p>
+		</div>
+
+		<div id="layout" class="tabcontent">
+			<h3>Wireframes</h3>
+			<div class="rightcolumn">
+			<p><img src="images/wpp/index.jpeg"></p>
+			<p><img src="images/wpp/catalogo.jpeg"></p>
+			<p><img src="images/wpp/autori.jpeg"></p>
+			<p><img src="images/wpp/item.jpeg"></p>
+			<p><img src="images/wpp/città.jpeg"></p>
+		</div>
+	</div>
+
+		<div id="usabilità" class="tabcontent">
+			<h3>Architettura</h3>
+			<p>La pagina Web è strutturata in modo da facilitare la navigazione dell'utente e la consultazione dei contenuti: la navigazione principale si trova nella navbar, nel quale è presente anche una barra di ricerca; c'è poi una struttura a due colonne, in cui nella parte sinistra sono presenti gli elementi di navigazione contestuale, mentre nella colonna di destra è inserito il corpo; la parte finale è occupata dal footer in cui sono presenti i credits, le licenze e il link che porta al web project plan e il copyright</p>
+			<h3>Aspetto e tipografia</h3>
+			<p>L'aspetto grafico del sito è pensato per rendere la navigazione semplice e leggibile. La tipografia contribuisce a distinguere i diversi livelli di informazione attraverso titoli, sottotitoli ed elenchi. I componenti dell'interfaccia sono organizzati in modo coerente e forniscono un feedback visivo all'utente.</p>
+			<h3>Colori, icone e font</h3>
+			<p>L'uso dei colori, delle icone e dei font è anch'esso finalizzato a migliorare la comprensibilità e leggibilità dei contenuti: i colori aiutano a distinguere le sezioni e a guidare l'attenzione dell'utente; i font sono scelti per garantire la chiarezza e coerenza visiva all'interno dell'intero sito <!-- il sans-serif è uno stile lineare e pulito, che dà senso di modernità-->.</p>
+			<!-- rosso colore che attira l'attenzione prepotentemente, legato anche alla ristorazione; giallo colore della cultura, oro è Ravenna -->
+		</div>
+
+		<div id="servizi" class="tabcontent">
+			<h3>Browsing</h3>
+			<p>I servizi di browsing utilizzati sono le breadcrumbs (elemento di navigazione che mostra lo schema gerarchico dell'interfaccia e mostra all'utente la pagina in cui si trova all'interno del sito, permettendo di risalire facilmente alle sezioni precedenti); una navigazione per parole chiave (metodo di navigazione che permette di trovare i contenuti attraverso le keyword, spesso tramite barra di ricerca o tag); gli indici per parole (elenco organizzato alfabeticamente di argomenti, termini o contenuti presenti nel sito; l'utente può poi cliccare sul termine che gli interessa per raggiungere direttamente il contenuto correlato); infine, la barra di ricerca (elemento che permette di inserire una parola o una frase per cercare contenuti all'interno di un sito; la funzione principale è quella di aiutare l'utente a trovare rapidamente informazioni senza navigare manualmente tra menu e pagine)</p>
+
+			<h3>Utilities e tools</h3>
+			<p>Sono stati utilizzati:
+			<ul>
+				<li>dropdown buttons: è un elemento che, quando cliccato, mostra un menu di opzioni nascoste; permette la navigazione secondaria</li>
+				<li>buttons: elementi usati per creare interazioni, fare azioni (per esempio aprire una nuova pagina)</li>
+				<li>tabs: sono pattern di interfaccia, servono cioè a dividere i contenuti in più sezioni visualizzabili una alla volta, permettendo così ridurre la confusione nell'utente migliorando la sua esperienza</li>
+				<li>card: elemento dell'interfaccia che organizza e visualizza informazioni correlate in un contenitore e  presenta contenuti come immagini, testo e pulsanti; serve ad organizzare e mostrare informazioni in modo chiaro, separato e visivamente coerente </li>
+				<li>accordion: è un pattern di interfaccia il cui contenuto è organizzato in sezione che si espandono e si comprimono quando l'utente ci clicca sopra; permette di mostrare o nascondere contenuti in sezioni espandibili, occupando così poco spazio e migliorando l'organizzazione della pagina </li>
+				<li>hero-image: è un'immagine principale, usata nella parte superiore della pagina, per comunicare e rendere subito visibile l'argomento interessato; permette di attirare l'attenzione immediatamente e comunicare un contenuto in modo visivo</li>
+			</ul> </p>
+
+		</div>
+		<div id="bibliografia" class="tabcontent">
+			<h3>Bibliografia e sitografia </h3>
+			<p>riferimenti biblio/sitografici relativi alle fonti impiegate:
+			<h4>Bibliografia</h4>
+			<p>LA VIA DELLA CROCE. UNO SGUARDO SULL'ARTE SACRA CONTEMPORANEA 2025, tesi di laurea di Maria Anna Maffi, Università degli studi di Urbino Carlo Bo, Dipartimento degli studi umanistici, corso di laurea: Storia dell'arte </p>
+			<h4>Sitografia</h4>
+			<p>Di confronto per la crezione del sito:
+				<ul>
+				<li><a href="https://visitromagna.it" target="_blank">https://visitromagna.it</a></li>
+				<li><a href="https://catalogo.beniculturali.it" target="_blank">https://catalogo.beniculturali.it</a></li>
+			    <li><a href="https://ilromagnolo.info" target="_blank">https://ilromagnolo.info</a></li>
+			  </ul>
+			</p>
+		    
+			<p>Crocifisso di Rimini, Tempio Malatestiano:
+				<ul>
+				<li><a href="https://tempiomalatestiano.it/" target="_blank">https://tempiomalatestiano.it/</a></li>
+				<li><a href="https://it.wikipedia.org/wiki/Crocifisso_di_Rimini" target="_blank">https://it.wikipedia.org/wiki/Crocifisso_di_Rimini</a></li>
+				<li><a href="https://riminiturismo.it/cosa-vedere/arte-e-cultura/opere-artistiche/crocifisso-di-giotto" target="_blank">https://riminiturismo.it/cosa-vedere/arte-e-cultura/opere-artistiche/crocifisso-di-giotto</a></li>
+				<li><a href="https://www.artesvelata.it/crocifissi-giotto-firenze-rimini-padova/#Il_Crocifisso_di_Rimini" target="_blank">https://www.artesvelata.it/crocifissi-giotto-firenze-rimini-padova/#Il_Crocifisso_di_Rimini</a></li>
+			</ul>
+		</p>
+		</div>
+	</section>
+
+	<footer>
+			<div class="credits">
+				<p><a href="#" target="_blank">Credits</a> | <a href="#">Licenze</a> | <a href="#" class="pagina-corrente">Web Project Plan</a></p>
+			</div>
+			<div class="copyright">
+				<p>&copy; Copyright (c) 2026 by Maria Maddalena Maffi</p>
+				<p><button class="btn"><a href="#top">torna su</a></button></p>
+			</div>
+	</footer>
+
+	<script> function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the link that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+	</body>
+	</html>

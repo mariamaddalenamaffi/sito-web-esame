@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+	<title>Arte in Romagna</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Maria Maddalena Maffi">
+	<meta name="description" content="sito dedicato all'arte romagnola, un catalogo comprendente le opere sparse nel territorio">
+	<meta name="keywords" content="arte, Romagna, città, Rimini, Cattolica, Bardeggia, Giotto">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Noto Sans" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="stilecss/stile.css">
+</head>
+
+<body>
+	<header id="top">
+		<div class="header">
+			<a href="index.html"> <img src="images/logoarteinromagna.png"></a>
+		</div>
+	</header>
+
+<!-- barra di navigazione -->
+	<nav>
+		<div class="topnav">
+			<a href="#" class="pagina-corrente">Home</a>
+			<a href="catalogo.html">Catalogo</a>
+			<div class="dropdown">
+				<button class="dropbtn">Servizi
+							<i class="fa fa-caret-down"></i>
+    					</button>
+    				<div class="dropdown-content">
+     				 	<a href="#">Itinerari</a>
+      					<a href="https://www.itinerarinellarte.it/" target="_blank">Mostre ed eventi</a>
+      				</div>
+      			</div>
+				<a href="dati.html">Dati</a>
+		<!-- barra di ricerca -->		
+				<input type="text" placeholder="Ricerca...">
+			</div>
+	</nav>
+
+<section>
+	<div class="row"> <!-- serve per indicare una riga di contenitori per organizzare il layout -->
+
+<!-- left column -->
+	<div class="leftcolumn">
+		<h4>Musei</h4>
+		<div class="biografia">
+		<h5>Provincia di Rimini</h5>
+		<p><a href="https://www.museicomunalirimini.it/musei/remar-rete-musei-area-riminese" target="_blank">Museo della Regina (Cattolica)</a></p>
+		<p><a href="https://www.museicomunalirimini.it/" target="_blank">Museo della Città (Rimini)</a></p>
+		<p><a href="#" target="_blank">Fellini Museum (Rimini)</a></p>
+		<p><a href="#"> Museo Civico Archeologico Villanoviano (Verucchio)</a></p>
+		<p><a href="#">Museo storico Archeologico (Santarcangelo di Romagna)</a></p>
+		<h5>Provincia di Forlì-Cesena</h5>
+		<p><a href="#">Museo Archeologico e Biblioteca Malatestiana (Cesena)</a></p>
+		<p><a href="#">Musei San Domenico (Forlì)</a></p>
+		<p><a href="https://www.fondazionetitobalestra.org/" target="_blank">Fondazione Tito Balestra (Longiano)</a></p>
+		<h5>Provincia di Ravenna</h5>
+		<p><a href="#">MAR - Museo d'Arte della Città di Ravenna</a></p>
+		<p><a href="#">Museo Classis Ravenna</a></p>
+		<p><a href="#">Museo Nazionale di Ravenna</a></p>
+		<p><a href="#">Domus dei Tappeti di Pietra</a></p>
+		<p><a href="#">Museo Arcivescovile</a></p>
+		<p><a href="#">MIC - Museo Internazionale delle Ceramiche (Faenza)</a></p>
+		<p><a href="#">Pinacoteca Comunale di Faenza</a></p>
+		<p><a href="#">Museo Carlo Zauli (Faenza)</a></p>
+		<p><a href="#">Museo Diocesano (Faenza)</a></p>
+		<h5>Provincia di Bologna (Imola)</h5>
+		<p><a href="https://imolamusei.it/" target="_blank">Museo San Domenico (Imola)</a></p>
+		<p><a href="https://imolamusei.it/" target="_blank">Rocca Sforzesca (Imola)</a></p>
+		<p><a href="https://imolamusei.it/" target="_blank">Palazzo Tozzoni</a></p>
+		</div> <!-- div biografia -->
+	</div> <!-- div leftcolumn -->
+
+<!-- rightcolumn -->
+	<div class="rightcolumn-index"> <!-- necessità di creare una classe apposita perché ha una diversa disposizione -->
+		<div class="container">
+			<img src="images/riminiepocaromana.jpg" alt="Arco d'Augusto, Rimini" title="Arco d'Augusto"><button class="btn"><a href="rimini.html">Rimini</a></button>
+		</div>
+
+		<div class="container">
+			<img src="images/Cesena.jpeg" alt="Cesena" title="Cesena">
+			<button class="btn"><a href="#">Cesena</a></button>
+		</div>
+
+		<div class="container">
+			<img src="images/forlì.jpeg" alt="Forlì" title="Forlì"><button class="btn"><a href="#">Forlì</a></button>
+		</div>
+
+		<div class="container">
+			<img src="images/ravenna.jpg" alt="Ravenna" title="Ravenna"><button class="btn"><a href="#">Ravenna</a></button>
+		</div>
+
+		<div class="container">
+			<img src="images/faenza.jpg" alt="Faenza" title="Faenza"><button class="btn"><a href="#">Faenza</a></button>
+		</div>
+
+		<div class="container">
+			<img src="images/imola.jpeg" alt="imola"><button class="btn"><a href="#">Imola</a></button>
+		</div>
+
+		</div> <!-- div rightcolumn-index-->
+		</div> <!-- div row-->
+
+</section>
+
+	<footer>
+			<div class="credits">
+				<p><a href="#" target="_blank">Credits</a> | <a href="#">Licenze</a> | <a href="webprojectplan.html">Web Project Plan</a></p>
+			</div>
+			<div class="copyright">
+				<p>&copy; Copyright (c) 2026 by Maria Maddalena Maffi</p>
+				<p><button class="btn"><a href="#top">torna su</a></button></p>
+			</div>
+		</footer>
+
+	<script>
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+
+			for (i = 0; i < acc.length; i++) {
+ 			 acc[i].addEventListener("click", function() {
+    			this.classList.toggle("active");
+    			var panel = this.nextElementSibling;
+    			if (panel.style.maxHeight) {
+					panel.style.maxHeight = null;
+    			} else {
+      				panel.style.maxHeight = panel.scrollHeight + "px";
+				    } 
+				  });
+				}
+	</script>
+
+</body>
+</html>

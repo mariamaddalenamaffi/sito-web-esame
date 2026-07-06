@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title>Arte in Romagna</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Maria Maddalena Maffi">
+	<meta name="description" content="sito dedicato all'arte romagnola, un catalogo comprendente le opere sparse nel territorio">
+	<meta name="keywords" content="arte, Romagna, città, Rimini, Cattolica, Bardeggia, Giotto">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Noto Sans" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="stilecss/stile.css">
+</head>
+<body>
+	<header id="top">
+		<div class="header">
+			<a href="index.html"> <img src="images/logoarteinromagna.png"></a>
+		</div>
+	</header>
+	<nav>
+		<div class="topnav">
+			<a href="index.html">Home</a>
+			<a href="catalogo.html">Catalogo</a>
+			<div class="dropdown">
+				<button class="dropbtn">Servizi
+							<i class="fa fa-caret-down"></i>
+    					</button>
+    				<div class="dropdown-content">
+     				 	<a href="#">Itinerari</a>
+      					<a href="https://www.itinerarinellarte.it/" target="_blank">Mostre ed eventi</a>
+      				</div>
+      			</div>
+				<a href="dati.html">Dati</a>
+				<input type="text" placeholder="Ricerca...">
+			</div>
+	</nav>
+
+	<section>
+		<div class="row">
+			<div class="leftcolumn">
+				<ul class="breadcrumb">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="catalogo.html">Catalogo</a></li>
+					<li><a href="rimini.html">Rimini</a></li>
+					<li>Cattolica</li>
+				</ul>
+
+				<div id="myBtnContainer">
+				  <button class="btn-filter active" onclick="filterSelection('all')">Tutti</button>
+				  <button class="btn-filter" onclick="filterSelection('creator')">Artisti</button>
+				  <button class="btn-filter" onclick="filterSelection('keywords')">Temi</button>
+				  <button class="btn-filter" onclick="filterSelection('date')">Periodo storico</button>
+				</div>
+
+				<div class="container">
+				  <div class="filterDiv creator">Emilio Filippini </div>
+				  <div class="filterDiv creator">Guerrino Bardeggia</div>
+				  <div class="filterDiv keywords">crocifisso</div>
+				  <div class="filterDiv date">età contemporanea</div>
+				</div>
+				
+			</div>
+
+			<div class="rightcolumn">
+				<div class="card">
+					<div class="card-content">
+						<img src="images/bardeggia/gabicces2.jpeg" alt="via-crucis-gabicce">
+						<h4><b>Stazione II. Gesù viene caricato della croce</b></h4>
+						<p><span>Luogo:</span> Cattolica</p>
+	                 	 <p><span>Data:</span> 1966-1967</p>
+	                 	 <a href="#" class="btn" title="Vai all'opera">Vai all'opera</a>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-content">
+						<img src="images/bardeggia/gabicces3.jpeg" alt="via-crucis-gabicce">
+						<h4><b>Stazione III. Gesù cade la prima volta</b></h4>
+						<p><span>Luogo:</span> Cattolica</p>
+						<p><span>Data:</span> 1966-1967</p>
+						<a href="#" class="btn" title="Vai all'opera">Vai all'opera</a>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-content">
+						<img src="images/bardeggia/gabicce6.jpeg" alt="via-crucis-gabicce">
+						<h4><b>Stazione VI. La Veronica asciuga il volto di Gesù</b></h4>
+						<p><span>Luogo:</span> Cattolica</p>
+						<p><span>Data:</span> 1966-1967</p>
+						<a href="#" class="btn" title="Vai all'opera">Vai all'opera</a>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-content">
+						<img src="images/bardeggia/viacrucisgabicce3.jpeg" alt="via-crucis-gabicce">
+						<h4><b>Stazione VII. Gesù cade per la seconda volta</b></h4>
+	                  	<p><span>Luogo:</span> Cattolica</p>
+	                 	 <p><span>Data:</span> 1966-1967</p>
+	                 	 <a href="#" class="btn" title="Vai all'opera">Vai all'opera</a>
+	                </div>
+				</div>
+
+				<div class="card">
+					<div class="card-content">
+						<img src="images/bardeggia/gabicce12.jpeg" alt="via-crucis-gabicce">
+						<h4><b>Stazione XII. Gesù muore in croce</b></h4>
+						<p><span>Luogo:</span> Cattolica</p>
+						<p><span>Data:</span> 1966-1967</p>
+						<a href="#" class="btn" title="Vai all'opera">Vai all'opera</a>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-content">
+						<img src="images/bardeggia/cattgesù.jpg" alt="gesù-cristo-risorto">
+						<h4><b>Gesù Cristo risorto</b></h4>
+						<p><span>Luogo:</span> Cattolica</p>
+						<p><span>Data:</span> 1996</p>
+						<a href="item.html" class="btn" title="Vai all'opera">Vai all'opera</a>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-content">
+						<img src="images/bardeggia/bardeggiacatt1.jpg" alt="cattolica">
+						<h4><b>Cristo crocifisso </b></h4>
+						<p><span>Luogo:</span> Cattolica</p>
+						<p><span>Data:</span> 1996</p>
+						<a href="#" class="btn" title="Vai all'opera">Vai all'opera</a>
+					</div>
+				</div>	
+			
+				<div class="card">
+					<div class="card-content">
+						<img src="images/cattolica/filippini1.jpg" alt="Scorcio dal porticato, Emilio Filippini" title="Emilio Filippini">
+						<h4>Scorcio dal porticato</h4>
+						<p><span>Luogo:</span> Cattolica</p>
+						<a href="#" title="Vai all'opera">Vai all'opera</a>
+					</div>
+				</div>
+
+				<div>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22974.97883183236!2d12.713160594673651!3d43.962006149675325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132ce0c278014d29%3A0x5a18609c37cd6581!2sCattolica%20RN!5e0!3m2!1sit!2sit!4v1783154792030!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+				</div>	
+			</div>
+		</div>
+	</section>
+
+
+	<footer>
+		<div class="credits">
+				<p><a href="#" target="_blank">Credits</a> | <a href="">Licenze</a> | <a href="webprojectplan.html">Web Project Plan</a></p>
+		</div>
+		<div class="copyright">
+				<p>&copy; Copyright (c) 2026 by Maria Maddalena Maffi</p>
+				<p><button class="btn"><a href="#top">torna su</a></button></p>
+		</div>
+	</footer>
+
+	<script>
+		filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current control button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn-filter");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+	</script>
+</body>
+</html>

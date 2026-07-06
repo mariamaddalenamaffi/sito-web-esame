@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title>Arte in Romagna</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Maria Maddalena Maffi">
+	<meta name="description" content="sito dedicato all'arte romagnola, un catalogo comprendente le opere sparse nel territorio">
+	<meta name="keywords" content="arte, Romagna, città, Rimini, Cattolica, Bardeggia, Giotto">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Noto Sans" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="stilecss/stile.css">
+</head>
+<body>
+	<header id="top">
+		<div class="header">
+			<a href="index.html"> <img src="images/logoarteinromagna.png"></a>
+		</div>
+	</header>
+	<nav>
+		<div class="topnav">
+			<a href="index.html">Home</a>
+			<a href="#" class="pagina-corrente">Catalogo</a>
+			<div class="dropdown">
+				<button class="dropbtn">Servizi
+							<i class="fa fa-caret-down"></i>
+    					</button>
+    				<div class="dropdown-content">
+     				 	<a href="#">Itinerari</a>
+      				<a href="https://www.itinerarinellarte.it/" target="_blank">Mostre ed eventi</a>
+      				</div>
+      			</div>
+				<a href="dati.html">Dati</a>
+				<input type="text" placeholder="Ricerca...">
+			</div>
+	</nav>
+
+		<section>
+			<div class="row">
+				<div class="leftcolumn">
+				<ul class="breadcrumb">
+					<li><a href="index.html">Home</a></li>
+					<li>Catalogo</li>
+				</ul>
+				</div>
+				
+				<div class="rightcolumn">
+
+				<button class="accordion"><b>Periodi storici</b></button>
+				<div class="panel">
+				  <p>
+				  	<ul>
+				  		<li><a href="#">Preistoria</a></li>
+				  		<li><a href="#">Età romana</a></li>
+				  		<li><a href="#">Medioevo</a></li>
+				  		<li><a href="#">Età moderna</a></li>
+				  		<li><a href="#">Età contemporanea</a></li>
+				  	</ul>
+				  </p>
+				</div>
+
+				<button class="accordion"><b>Temi</b></button>
+				<div class="panel">
+				  <p>
+				  	<ul>
+				  	<li><a href="#">Chiese</a></li> 
+				  	<li><a href="#">Crocifissi</a></li>
+				  	<li><a href="#">Viae Crucis</a></li>
+				  </p>
+				</div>
+				<button class="accordion"><b>Artisti</b></button>
+				<div class="panel">
+	  				<p>
+	  					<ul> 
+	  						<li><a href="bardeggia.html">Bardeggia,Guerrino</a></li>
+	  						<li><a href="#">Biancini, Angelo</a></li>
+	  						<li><a href="#">Canova, Antonio</a></li>
+	  						<li><a href="#">Filippini, Emilio</a></li>
+	  						<li><a href="#">Giani, Felice</a></li>
+	  						<li><a href="giotto.html">Giotto</a></li>
+	  						<li><a href="#">Giovanni da Rimini</a></li>
+	  						<li><a href="#">Longhi, Luca</a></li>
+	  						<li><a href="#">Palmezzano, Marco</a></li>
+	  						<li><a href="#">Piero della Francesca</a></li>
+	  						<li><a href="#">Reni, Guido</a></li>
+	 	  					</ul>
+	  				</p>
+				</div>
+				<button class="accordion"><b>Luoghi</b></button>
+					<div class="panel">
+						<p>
+							<ul>
+								<li><a href="#">Cesena</a></li>
+								<li><a href="#">Faenza</a></li>
+								<li><a href="#">Forlì</a></li>
+								<li><a href="#">Imola</a></li>
+								<li><a href="#">Ravenna</a></li>
+								<li><a href="rimini.html">Rimini</a></li>								
+							</ul>
+						</p>
+				</div>
+			</div>
+		</section>
+
+	<footer>
+		<div class="credits">
+				<p><a href="#" target="_blank">Credits</a> | <a href="">Licenze</a> | <a href="webprojectplan.html">Web Project Plan</a></p>
+		</div>
+		<div class="copyright">
+				<p>&copy; Copyright (c) 2026 by Maria Maddalena Maffi</p>
+				<p><button class="btn"><a href="#top">torna su</a></button></p>
+		</div>
+	</footer>
+
+<script> 
+	const acc = document.querySelectorAll(".accordion");
+
+acc.forEach(btn => {
+  btn.addEventListener("click", function () {
+    this.classList.toggle("active");
+
+    const panel = this.nextElementSibling;
+
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+});
+</script>
+
+<script>
+const indice = document.getElementById("indice");
+const titoli = document.querySelectorAll("h2");
+
+titoli.forEach((titolo, i) => {
+  // creo un id se non esiste
+  if (!titolo.id) {
+    titolo.id = "sezione-" + i;
+  }
+
+  const li = document.createElement("li");
+  const a = document.createElement("a");
+
+  a.href = "#" + titolo.id;
+  a.textContent = titolo.textContent;
+
+  li.appendChild(a);
+  indice.appendChild(li);
+});
+</script>
+
+</body>
+</html>
+
+

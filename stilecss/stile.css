@@ -1,0 +1,577 @@
+*{ box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;}
+
+/*html*/
+html  {
+	height: 100%;
+}
+
+/*body*/
+body {
+	color: #000000;
+	font-size: 16px;
+	margin: 0;
+	height: 100%;
+}
+
+/*a*/
+/* con a si intendono tutti gli elementi HTML <a>, cioè i collegamenti (link) */
+a {
+	color: #000000;
+}
+
+a:hover {
+	color: black;
+	text-decoration: none;
+}
+
+a:active {
+	color:white;
+	background: #8B0000;
+}
+
+/* LAYOUT */
+/* header */
+.header {
+	background-color: #8B0000;
+	padding: 15px;
+	text-align: center;
+}
+
+.header img {
+	width: 60%;
+	height: 100%;
+}
+
+/* navingation bar */
+.topnav {
+	background-color: #DAA520;
+	overflow: hidden;
+	font-weight: bold;
+}
+
+.topnav a {
+	color: #f2f2f2;
+	padding: 14px 16px;
+	text-align: center;
+	display: block;
+	float: left;
+	text-decoration: none;
+}
+
+.topnav a:hover {
+	background-color: #8B0000;
+	color: #f2f2f2;
+}
+
+.topnav .active {
+	color: #f2f2f2;
+	background-color: #8B0000;
+}
+
+.topnav input[type=text] {
+	float: right;
+	padding: 3px;
+	border: black;
+	margin-top: 10px;
+	margin-right: 5px;
+	font-size: 14px;
+}
+
+.topnav input[type=text]{
+    border: 1px solid #ccc;
+ }
+
+
+/* The dropdown container */
+.dropdown {
+	float: left;
+	overflow: hidden;
+}
+
+
+/* Dropdown button */
+.dropdown .dropbtn {
+	font-size: 16px;
+	border: none;
+	outline: none;
+	color: #f2f2f2;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+	font-weight: bold;
+}
+
+.dropdown:hover .dropbtn {
+	background-color: #8B0000;
+}
+
+/* Dropdown content (hidden by default) */
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #8B0000;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+/*Links inside the dropdown*/
+.dropdown-content a {
+	float: none;
+	color: #f2f2f2;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: #DAA520;
+}
+
+/*Show the dropdown mwnu on hover*/
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+/*container*/
+.container {
+	position:relative;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 5px;
+
+}
+
+.container img {
+	width: 100%;
+	height: 100%;
+	aspect-ratio: 4 / 3;
+	object-fit: cover;
+}
+
+.container .btn {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(218, 165, 32, 0.6);
+	color: #f2f2f2;
+	font-size: 16px;
+	padding: 30px 40px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+.btn a {
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.btn a:hover {
+	color: #f2f2f2;
+}
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* row */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*column*/
+.column {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr) ;
+	gap: 5px;
+}
+
+.leftcolumn {
+	float: left;
+	font-size: 16px;
+	padding: 10px;
+	width: 20%;
+	height: 100%;
+	background-color: #f2f2f2;
+}
+
+.rightcolumn {
+	float: left;
+	padding: 10px;
+	width: 80%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	gap: 3px;
+}
+
+.columnright {
+	float: left;
+	padding: 10px;
+	width: 80%;
+	height: 100%;
+	}
+
+.rightcolumn-index {
+	float: left;
+	padding: 10px;
+	width: 80%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 3px;
+}
+
+/* responsive column */
+@media screen and (max-width: 600px) {
+  /* columns */
+  .column,
+  .leftcolumn,
+  .rightcolumn,
+  .columnright
+  .equalcolumn {
+    width: 100%;
+  }
+}
+
+
+/* footer */
+.credits {
+  background-color: #DAA520;
+  font-size: 15px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* footer */
+.copyright {
+  background-color: #8B0000;
+  color: #ddd;
+  font-size: 15px;
+  padding: 5px;
+  text-align: center;
+}
+
+
+
+/* breadcrumb */
+
+.breadcrumb {
+	padding: 10px 5px;
+	list-style: none;
+	background-color: #eee;
+}
+
+.breadcrumb li {
+	display: flex;
+	font-size: 16px;
+	list-style: none;
+}
+
+.breadcrumb li+li:before {
+	padding: 2px;
+	color: black;
+	content: "/\00a0";
+}
+
+ /* accordation */
+.accordion {
+  background-color: #DAA520;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 17px;
+  transition: 0.2s;
+}
+
+.accordion.active, 
+.accordion:hover {
+  background-color: #8B0000;
+  color: #f2f2f2;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: #f2f2f2;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  width: 100%;
+}
+
+.panel a {
+	color: black;
+}
+
+.rightcolumn .accordion {
+	width: 90%;
+	display: block;
+	box-sizing: border-box;
+	grid-column: 1 / -1;
+}
+
+/* cards */
+.card {
+  background-color: #e4ba4e;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  overflow: hidden;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-content{
+  padding: 5px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.card a {
+  margin-bottom: 16px;
+}
+
+.card img {
+  background-repeat: no-repeat;
+  height: 70%;
+  width: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+
+/* tab */
+.tab {
+	position: sticky;
+	float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: auto;
+ 	padding: 10px 5px;
+}
+
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.tab button:hover {
+  background-color: #8B0000;
+}
+
+
+.tab button.active {
+  background-color: #DAA520;
+}
+
+.tabcontent {
+	float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: auto;
+  display: none;
+}
+
+.tabcontent img {
+	width: 70%;
+	height: 100%;
+	object-fit: cover;
+}
+
+section {
+	overflow: auto;
+}
+
+
+/* hero-image */
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/riminiacquerello.jpg");
+  height: 450px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+
+.scroll-container {
+  background-color: #DAA520;
+  overflow: auto;
+  white-space: nowrap;   /* serve solo per evitare che gli item vadano a capo */
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.scroll-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 auto;         /* impedisce che l'elemento si restringa */
+  white-space: normal;    /* qui invece il testo deve poter andare a capo */
+  width: 300px;
+}
+
+.scroll-item img {
+  padding: 5px;
+  width: 300px;
+  height: 250px;
+  border-radius: 5px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+
+
+.gallery {
+	background-color: #DAA520;
+}
+
+.gallery h4 {
+	padding: 5px 10px;
+}
+
+.gallery p {
+	padding: 5px 10px;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.biografia p {
+	font-size: 15px;
+}
+
+/* item */
+.border-section {
+	padding: 12px 12px;
+	border: 1px solid #ccc;
+}
+
+.pd-12 {
+  margin: 12px 0;
+  padding: 12px;
+}
+
+.responsive{
+    width:100%;
+    height:auto;
+}
+
+.btn-link {
+	background-color: #DAA520;
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	display: block;
+	font-size: 14px;
+}
+
+.btn-ap {
+	background-color: #8B0000;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	display: flex;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.btn-ap a {
+	color: #f2f2f2;
+	text-decoration: none;
+}
+
+/* tabella con bordo */
+table, th, td {
+  border:1px solid black;
+  padding: 5px;
+ } 
+
+table, th, td :hover {
+	color: black;
+}
+
+.filterDiv {
+  float: left;
+  background-color: #DAA520;
+  color: #f2f2f2;
+  width: 200px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none; /* Hidden by default */
+  font-size: 14px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn-filter {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #8B0000;
+  cursor: pointer;
+  color: #f2f2f2;
+  margin: 2px;
+}
+
+/* Add a light grey background on mouse-over */
+.btn-filter:hover {
+  background-color: #8B0000;
+  color: #f2f2f2;
+}
+
+/* Add a dark background to the active button */
+.btn-filter .active {
+  background-color: #DAA520;
+  color: white;
+}
